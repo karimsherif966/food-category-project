@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 320px;
+}
+.nav-side{
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+}
+.cursor{
+    cursor: pointer;
+}
+nav .nav-content li{
+    padding-top: 15px;
+    list-style: none;
+    cursor: pointer;
+   
+    
+}
+.nav-content{
+    width: 80%;
+    
+}
+.layer{
+    background-color: rgba(255, 255, 255, 0.658);
+    transition: 1s;
+    
+}
+.item, .category-item{
+    cursor: pointer;
+}
+.item:hover .layer {
+    top: 0% !important;
+}
+.category-item:hover .layer{
+    top: 0% !important;
+}
+
+.search-content .form-control{
+    width: 45%;
+    height: 30px;
+    background-color: transparent;
+    
+}
+.search-content .form-control:focus{
+    background-color: transparent;
+}
+.search-content ::placeholder{
+    color: rgba(255, 255, 255, 0.651) !important;
+}
+ .instructions{
+    font-size: 0.8rem;
+}
+.source-btn{
+    background-color: #157347;
+    font-size: 0.8rem;
+    transition: 0.5s;
+    
+}
+.youtube-btn{
+    background-color: #BB2D3B;
+    font-size: 0.8rem;
+    transition: 0.5s;
+}
+.youtube-btn:hover, .source-btn:hover{
+    filter: brightness(80%);
+}
+.categories-text{
+    font-size:0.8rem !important ;
+}
+.area-content i,.ingredient-content i{
+    font-size: 4rem;
+}
+.area-content p{
+    font-size: 1.5rem;
+}
+
+.ingredient-content p{
+    font-size: 0.8rem;
+}
+
+.inputs-row{
+    margin-bottom: 10%;
+}
+.w-10{
+ width: 100px;
+}
+.error{
+    background-color: #F8D7DA;
+    color: #842029;
+    margin-top: 1%;
+    padding: 0.5rem;
+    
+    
+    
+    
+    
+    
+}
+/* loading page */
+.loading {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    width: 100%;
+    background-color: black;
+    
+  }
+  
+  @keyframes arrows {
+    0%,
+    100% {
+      color: black;
+      transform: translateY(0);
+    }
+    50% {
+      color: #3AB493;
+      transform: translateY(20px);
+    }
+  }
+  
+  .loading span {
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
+  }
